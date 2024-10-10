@@ -33,7 +33,14 @@ function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
 }
+const video = document.querySelector('video');
+const closeButton = document.querySelector('#closeButton');
 
+closeButton.addEventListener('click', () => {
+    video.pause();
+    video.currentTime = 0; // Reset to the beginning
+    video.style.display = 'none'; // Hide video
+});
 // Lightbox for Portfolio Videos
 const lightbox = document.getElementById('lightbox');
 const closeBtn = document.getElementById('close-btn');
