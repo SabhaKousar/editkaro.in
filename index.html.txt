@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+    <!-- Home Section -->
+    <header id="home">
+        <h1>Welcome to Editkaro.in</h1>
+        <p>Your go-to social media marketing and video editing agency!</p>
+        <form id="emailForm">
+            <label for="email">Subscribe for updates:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="Short Form">
+                <img src="https://via.placeholder.com/300" alt="Short Form Video">
+                <h3>Short Form</h3>
+                <button class="lightbox-btn">Watch</button>
+            </div>
+            <div class="portfolio-item" data-category="Long Form">
+                <img src="https://via.placeholder.com/300" alt="Long Form Video">
+                <h3>Long Form</h3>
+                <button class="lightbox-btn">Watch</button>
+            </div>
+            <!-- Add more items for categories like Gaming, Football Edits, etc. -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing high-quality social media marketing and video editing services...</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="contact-email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone" pattern="[0-9]{10}">
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Videos -->
+    <div id="lightbox" class="hidden">
+        <span id="close-btn">&times;</span>
+        <video controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
